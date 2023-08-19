@@ -1,4 +1,4 @@
-import ExpenseData from './components/ExpenseData';
+import ExpenseData from './components/Expenses/ExpenseData';
 
 function App() {
 
@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <ExpenseData/>
-
     </div>
   );
 }
