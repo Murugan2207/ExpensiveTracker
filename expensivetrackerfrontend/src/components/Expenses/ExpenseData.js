@@ -1,5 +1,5 @@
 import ExpenseItem from "./ExpenseItem"
-import './ExpenseData.css'
+import '../styles/ExpenseData.css'
 function ExpenseData(){
     const expenseData=[
         {
