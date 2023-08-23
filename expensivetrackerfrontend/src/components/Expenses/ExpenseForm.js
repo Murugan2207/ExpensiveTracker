@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import '../styles/ExpenseForm.css'
+import ExpensesFilter from "./ExpensesFilter";
 
 
-export function ExpenseForm(){
+export function ExpenseForm(props){
   
     const[enteredTitle,setEnteredTitle]=useState('');
     const[enteredAmount,setEnteredAmount]=useState('');
@@ -30,7 +31,7 @@ export function ExpenseForm(){
            amount:enteredAmount,
            date:new Date(enteredDate)
           }
-          console.log(newExpense)
+          props.onSaveExpenseData(newExpense)
           setEnteredAmount('');
           setEnteredDate('');
           setEnteredTitle('');
